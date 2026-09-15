@@ -1,0 +1,40 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.appNameContainer {
+    display: flex;
+    justify-content: center;
+    font-size: 29px;
+    font-weight:bolder;
+    background-color: rgba(148, 148, 192, 0.719);
+}
+
+.appFrameContainer {
+    display: flex;
+    background-color: rgba(22, 22, 36, 0.664);
+    gap: 100px;
+}
+
+.sidebarContainer {
+    background-color: rgb(204, 176, 230);
+    height: 100vh;
+    width: 280px;
+}
+
+.addProjectContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: rgba(123, 69, 173, 0.137);
+}
+
+.sidebarProjectDisplayContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding: 8px;
+}
