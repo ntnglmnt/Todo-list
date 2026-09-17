@@ -20,6 +20,8 @@ body {
     background-color: rgba(22, 22, 36, 0.664);
 }
 
+/* SIDEBAR CSS MANAGEMENT */
+
 .sidebarContainer {
     background-color: rgb(204, 176, 230);
     height: 100vh;
@@ -40,7 +42,16 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    padding: 8px;
+    gap: 10px;
+    padding-top: 12px;
+}
+
+.projectCard {
+    border: 2px solid black;
+    width: 220px;
+    height: 144px;
+    font-size: 36px;
+    padding-left: 14px;
 }
 
 .projectAdd {
@@ -49,6 +60,12 @@ body {
     font-size: large;
     border-radius: 18px;
 }
+
+/* DISPLAY CSS MANAGEMENT */
+
+
+
+
 
 .taskDisplayContainer {
     width: 100vw;
@@ -76,3 +93,4 @@ body {
     height: 100vh;
     background-color: rgb(152, 159, 165);
 }
+
