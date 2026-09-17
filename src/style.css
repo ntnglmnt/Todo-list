@@ -5,10 +5,14 @@ body {
 
 .appNameContainer {
     display: flex;
-    justify-content: center;
-    font-size: 29px;
+    justify-content: flex-start;
+    padding-left: 18px;
+    align-items: center;
+    font-size: 62px;
     font-weight:bolder;
     background-color: rgba(148, 148, 192, 0.719);
+    height: 78px;
+    border: 1px solid black;
 }
 
 .appFrameContainer {
@@ -20,7 +24,7 @@ body {
 .sidebarContainer {
     background-color: rgb(204, 176, 230);
     height: 100vh;
-    width: 280px;
+    width: 18vw;
 }
 
 .addProjectContainer {
@@ -43,6 +47,24 @@ body {
 
 .projectAdd {
     width: 128px;
+    height: 34px;
+    font-size: large;
+    border-radius: 18px;
+}
+
+.taskDisplayTopPanel {
+    width: 70vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    border-bottom: 1px solid black;
+    font-size: 38px;
+}
+
+.taskAdd {
+     width: 128px;
     height: 34px;
     font-size: large;
     border-radius: 18px;
