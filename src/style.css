@@ -29,6 +29,8 @@ body {
     align-items: center;
     height: 120px;
     background-color: rgba(123, 69, 173, 0.137);
+    border-radius: 12px;
+    border: 1px solid black;
 }
 
 .sidebarProjectDisplayContainer{
