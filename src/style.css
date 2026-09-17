@@ -38,3 +38,10 @@ body {
     height: 100vh;
     padding: 8px;
 }
+
+.projectAdd {
+    width: 128px;
+    height: 34px;
+    font-size: large;
+    border-radius: 18px;
+}
