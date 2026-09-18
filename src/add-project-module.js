@@ -9,10 +9,11 @@ const projectCard = {
 
         // Create an instance of the addProjectContainer so i can insert a button bellow (addNewProjectBtn)
         const addProjectContainer = document.querySelector('.addProjectContainer')
+        addProjectContainer.innerHTML = 'New project'
 
         const addNewProjectBtn = document.createElement('button')
         addNewProjectBtn.classList.add('projectAdd')
-        addNewProjectBtn.innerHTML = 'Add Project'
+        addNewProjectBtn.innerHTML = '+'
         addProjectContainer.appendChild(addNewProjectBtn)
         addNewProjectBtn.addEventListener('click', function createCard() {
 

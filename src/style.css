@@ -30,11 +30,13 @@ body {
 
 .addProjectContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 120px;
     background-color: rgba(123, 69, 173, 0.137);
     border-bottom: 2px solid black;
+    font-weight: 600;
+    font-size: large;
 }
 
 .sidebarProjectDisplayContainer{
@@ -47,10 +49,11 @@ body {
 }
 
 .projectAdd {
-    width: 128px;
-    height: 34px;
+    width: 48px;
+    height: 48px;
     font-size: large;
-    border-radius: 18px;
+    border-radius: 38px;
+    border: 1px solid black;
 }
 
 /* PROJECT CARD CSS */
@@ -77,11 +80,6 @@ body {
 }
 
 /* DISPLAY CSS MANAGEMENT */
-
-
-
-
-
 .taskDisplayContainer {
     width: 100vw;
     border-left: 4px solid black ;
