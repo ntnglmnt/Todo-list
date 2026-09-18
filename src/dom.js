@@ -1,6 +1,3 @@
-// Create an instance of the addProjectContainer so i can insert a button bellow (addNewProjectBtn)
-const addProjectContainer = document.querySelector('.addProjectContainer')
-
 
 
 // Create an instance of the taskDisplayTopPanel so i can insert a button bellow (addTaskBtn)

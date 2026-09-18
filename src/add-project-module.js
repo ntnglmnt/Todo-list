@@ -2,6 +2,11 @@ const projectCard = {
 
     createCard: () => {
 
+        function createNewProject(projectName) {
+            projectName = prompt('Enter project name')
+            return projectName
+        }
+
         // Create an instance of the addProjectContainer so i can insert a button bellow (addNewProjectBtn)
         const addProjectContainer = document.querySelector('.addProjectContainer')
 
@@ -18,14 +23,21 @@ const projectCard = {
             sidebarContainer.appendChild(card)
             card.innerHTML = createNewProject()
 
-            const deleteCard = document.createElement('button')
+            projectCard.removeCard(card)
+        })
+    },
 
-            function createNewProject(projectName) {
-                projectName = prompt('Enter project name')
-                console.log(projectName)
-                return projectName
-            }
+    removeCard: (card) => {
 
+        // remove the card completely from the list
+
+        const removeCardBtn = document.createElement('button')
+        removeCardBtn.classList.add('removeCardButton')
+        removeCardBtn.innerHTML = 'x'
+        card.appendChild(removeCardBtn)
+
+        removeCardBtn.addEventListener('click', () => {
+            card.remove()
         })
     },
 

@@ -1,0 +1,15 @@
+7/09/2026
+Initiate the project (html, css, js)
+Create the basic files via webpack
+
+15/09/2026
+create a rough sketch of the UI
+create basic html structure and css layout
+
+17/09/2026
+create the mainpage default elements in dom.js file
+create functionality for add project button to create a project card
+
+18/09/2026
+create a delete functionality for the project card allowing it to delete itself
+create an edit name functionality ??

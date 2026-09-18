@@ -46,19 +46,34 @@ body {
     padding-top: 12px;
 }
 
+.projectAdd {
+    width: 128px;
+    height: 34px;
+    font-size: large;
+    border-radius: 18px;
+}
+
+/* PROJECT CARD CSS */
 .projectCard {
     border: 2px solid black;
     width: 220px;
     height: 144px;
     font-size: 36px;
     padding-left: 14px;
+    display: flex;
+    justify-content: space-between;
 }
-
-.projectAdd {
-    width: 128px;
-    height: 34px;
+.removeCardButton {
+    display: flex;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: rgb(204, 176, 230);
+    border-radius: 100px;
+    border: 1px solid rgb(204, 176, 230);
     font-size: large;
-    border-radius: 18px;
+    font-weight: 1000;
+    box-shadow: none;
 }
 
 /* DISPLAY CSS MANAGEMENT */
