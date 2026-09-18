@@ -19,11 +19,17 @@ const projectCard = {
 
             const sidebarContainer = document.querySelector('.sidebarProjectDisplayContainer')
 
-            let card = document.createElement('div')
+            let card = document.createElement('button')
             card.classList.add('projectCard')
             sidebarContainer.appendChild(card)
-            card.innerHTML = createNewProject()
 
+            const cardName = document.createElement('div')
+            cardName.classList.add('cardName')
+            cardName.innerHTML = createNewProject()
+            card.appendChild(cardName)
+            // card.addEventListener('click', )
+
+            projectCard.editCardName(card, cardName)
             projectCard.removeCard(card)
         })
     },
@@ -41,6 +47,26 @@ const projectCard = {
             card.remove()
         })
     },
+
+    editCardName: (card, cardName) => {
+
+        function createNewProject(projectName) {
+            projectName = prompt('Enter project name')
+            return projectName
+        }
+
+        // change the name of the card
+        const editNameBtn = document.createElement('button')
+        editNameBtn.classList.add('editNameBtn')
+        editNameBtn.innerHTML = 'Edit'
+        card.appendChild(editNameBtn)
+
+        editNameBtn.addEventListener('click', () => {
+            
+            cardName.innerHTML = createNewProject()
+        })
+
+    }
 
 }
 
