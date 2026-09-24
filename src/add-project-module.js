@@ -1,4 +1,4 @@
-const projectCard = {
+const controller = {
 
     createCard: () => {
 
@@ -7,7 +7,6 @@ const projectCard = {
             return projectName
         }
 
-        // Create an instance of the addProjectContainer so i can insert a button bellow (addNewProjectBtn)
         const addProjectContainer = document.querySelector('.addProjectContainer')
         addProjectContainer.innerHTML = 'New project'
 
@@ -15,26 +14,35 @@ const projectCard = {
         addNewProjectBtn.classList.add('projectAdd')
         addNewProjectBtn.innerHTML = '+'
         addProjectContainer.appendChild(addNewProjectBtn)
-        addNewProjectBtn.addEventListener('click', function createCard() {
+        addNewProjectBtn.addEventListener('click', function createCard(cardLink) {
 
             const sidebarContainer = document.querySelector('.sidebarProjectDisplayContainer')
 
             let card = document.createElement('button')
             card.classList.add('projectCard')
             sidebarContainer.appendChild(card)
+            card.addEventListener('click', () => {
+                taskCardContainer.replaceChildren(cardDisplay)
+            })
+
+            const taskCardContainer = document.querySelector('.taskCardContainer')
+
+            const cardDisplay = document.createElement('div')
+            cardDisplay.classList.add('cardDisplay')
+            taskCardContainer.replaceChildren(cardDisplay)
 
             const cardName = document.createElement('div')
             cardName.classList.add('cardName')
             cardName.innerHTML = createNewProject()
+            cardLink = cardName.innerHTML
             card.appendChild(cardName)
-            // card.addEventListener('click', )
 
-            projectCard.editCardName(card, cardName)
-            projectCard.removeCard(card)
+            controller.editCardName(card, cardName)
+            controller.removeCard(card)
         })
     },
 
-    removeCard: (card) => {
+    removeCard: (card,cardDisplay) => {
 
         // remove the card completely from the list
 
@@ -45,6 +53,7 @@ const projectCard = {
 
         removeCardBtn.addEventListener('click', () => {
             card.remove()
+            card.cardDisplay.remove()
         })
     },
 
@@ -62,7 +71,6 @@ const projectCard = {
         card.appendChild(editNameBtn)
 
         editNameBtn.addEventListener('click', () => {
-            
             cardName.innerHTML = createNewProject()
         })
 
@@ -70,4 +78,4 @@ const projectCard = {
 
 }
 
-generateButton = projectCard.createCard()
+controller.createCard()

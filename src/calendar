@@ -12,4 +12,12 @@ create functionality for add project button to create a project card
 
 18/09/2026
 create a delete functionality for the project card allowing it to delete itself
-create an edit name functionality ??
+create an edit name functionality
+
+19/09/2026
+create functionality, the button should direct you into its own list of tasks 
+
+22/09/2026
+add-project-module line 19-28 trying to pair the project card with its own display of tasks
+
+24/09/2026
