@@ -126,16 +126,56 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-   height: 100vh;
+    height: 100vh;
     background-color: aliceblue;
     padding: 42px;
     gap: 20px;
 }
 
+.taskCardName {
+    width: 288px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.taskCardDate {
+    display: flex;
+    align-items: center;
+    width: 88px;
+    height: 28px;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.taskCardDetails {
+    width: 648px;
+    height: 128px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 80px;
+    right: 250px;
+    font-size: 40px;
+}
+
 .taskCard{
-    width: 58vw;
-    height: 28vh;
+    display: flex;
+    justify-content: space-around;
+    gap: 12px;
+    width: 928px;
+    height: 328px;
     border: 2px solid black;
     border-radius: 42px;
 }
 
+.taskCardPrio{
+    width: 44px;
+    height: 44px;
+    position: relative;
+    font-size: 24px;
+    top: 280px;
+    right: 80px;
+}

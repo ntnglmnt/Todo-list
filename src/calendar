@@ -21,3 +21,6 @@ create functionality, the button should direct you into its own list of tasks
 add-project-module line 19-28 trying to pair the project card with its own display of tasks
 
 24/09/2026
+fix issue with tasks being displayed into irrelevant projects
+generate a basic layout for the card info (name,date,details...)
+
