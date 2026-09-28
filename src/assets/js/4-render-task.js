@@ -1,3 +1,5 @@
+// Handles DOM generation for the tasks
+
 const taskController = {
 
     createTaskButton: () => {

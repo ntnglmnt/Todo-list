@@ -1,3 +1,4 @@
+// Handles DOM generation for the projects
 const controller = {
 
     createCard: () => {
@@ -77,3 +78,5 @@ const controller = {
 }
 
 controller.createCard()
+
+
