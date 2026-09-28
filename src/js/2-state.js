@@ -2,7 +2,7 @@
 
 export const appState = {
 
-    project: [],
+    projects: [],
     activeProject: null,
 
 }

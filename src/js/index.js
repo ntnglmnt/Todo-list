@@ -1,3 +1,6 @@
+import '../css/style.css'
+import '../css/project.css'
+import '../css/task.css'
 import './1-models.js'
 import './2-state.js'
 import './3-render-project.js'
