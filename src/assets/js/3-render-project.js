@@ -1,19 +1,5 @@
 // Handles DOM generation for the projects
 
-
-        // removeCardBtn.addEventListener('click', (event) => {
-        //     event.stopPropagation()
-        //     card.remove()
-        //     cardDisplay.remove()
-        // })
-
-    // editCardName: (card, cardName) => {
-
-    //     function createNewProject(projectName) {
-    //         projectName = prompt('Enter project name')
-    //         return projectName
-    //     }
-
 function renderProjectCard(project) {
 
     const cardDisplay = document.createElement('div')
@@ -22,10 +8,10 @@ function renderProjectCard(project) {
     const projectCard = document.createElement('button')
     projectCard.classList.add('projectCard')
     
-    const removeCardBtn = document.createElement('button')
-    removeCardBtn.classList.add('removeCardButton')
-    removeCardBtn.innerHTML = 'x'
-    projectCard.appendChild(removeCardBtn)
+    const deleteProjectBtn = document.createElement('button')
+    deleteProjectBtn.classList.add('removeCardButton')
+    deleteProjectBtn.innerHTML = 'x'
+    projectCard.appendChild(deleteProjectBtn)
 
     const editNameBtn = document.createElement('button')
     editNameBtn.classList.add('editNameBtn')
@@ -39,7 +25,7 @@ function renderProjectCard(project) {
 
     project.card = projectCard
     project.display = cardDisplay
-    project.removeCardBtn = removeCardBtn
+    project.deleteProjectBtn = deleteProjectBtn
     project.editNameBtn = editNameBtn
 }
 
