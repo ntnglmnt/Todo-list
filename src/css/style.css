@@ -1,5 +1,6 @@
 body {
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
 }
 
@@ -10,22 +11,22 @@ body {
     align-items: center;
     font-size: 62px;
     font-weight:bolder;
-    background-color: rgba(148, 148, 192, 0.719);
+    background-color: white;
     height: 78px;
     border-bottom: 4px solid black;
 }
 
 .appFrameContainer {
     display: flex;
-    background-color: rgba(22, 22, 36, 0.664);
+    background-color: white;
 }
 
 /* SIDEBAR CSS MANAGEMENT */
 
 .sidebarContainer {
-    background-color: rgb(204, 176, 230);
-    height: 100vh;
+    background-color: white;
     width: 28vw;
+    height: 100vh;
 }
 
 .addProjectContainer {
@@ -33,7 +34,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     height: 120px;
-    background-color: rgba(123, 69, 173, 0.137);
+    background-color: white;
     border-bottom: 2px solid black;
     font-weight: 600;
     font-size: large;
@@ -43,7 +44,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
     gap: 10px;
     padding-top: 12px;
 }
@@ -67,16 +67,16 @@ body {
     padding-left: 14px;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(204, 176, 230);
+    background-color: white;
 }
 .removeCardButton {
     display: flex;
     justify-content: center;
     width: 32px;
     height: 32px;
-    background-color: rgb(204, 176, 230);
+    background-color: white;
     border-radius: 100px;
-    border: 1px solid rgb(204, 176, 230);
+    border: 1px solid white;
     font-size: large;
     font-weight: 1000;
     box-shadow: none;
@@ -88,7 +88,7 @@ body {
     position: relative;
     top: 110px;
     right: 190px;
-    background-color: rgb(204, 176, 230);
+    background-color: white;
     border: 2px solid rgb(0, 0, 0);
     font-size: large;
     font-weight: 600;
@@ -101,7 +101,7 @@ body {
 }
 
 .taskDisplayTopPanel {
-    height: 10vh;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,16 +118,14 @@ body {
 }
 
 .taskCardContainer {
-    height: 100vh;
-    background-color: rgb(152, 159, 165);
+    background-color: white;
 }
 
 .cardDisplay {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    background-color: aliceblue;
+    background-color: white;
     padding: 42px;
     gap: 20px;
 }
@@ -180,6 +178,7 @@ border: 2px solid black;
 }
 
 .taskCardDetails {
+    padding: 32px;
     display: flex;
     font-size: 28px;
 }

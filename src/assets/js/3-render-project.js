@@ -14,7 +14,7 @@ const controller = {
         addNewProjectBtn.classList.add('projectAdd')
         addNewProjectBtn.innerHTML = '+'
         addProjectContainer.appendChild(addNewProjectBtn)
-        addNewProjectBtn.addEventListener('click', function createCard(cardLink) {
+        addNewProjectBtn.addEventListener('click', function createCard() {
 
             const sidebarContainer = document.querySelector('.sidebarProjectDisplayContainer')
 
@@ -34,26 +34,24 @@ const controller = {
             const cardName = document.createElement('div')
             cardName.classList.add('cardName')
             cardName.innerHTML = createNewProject()
-            cardLink = cardName.innerHTML
             card.appendChild(cardName)
 
             controller.editCardName(card, cardName)
-            controller.removeCard(card)
+            controller.removeCard(card, cardDisplay)
         })
     },
 
-    removeCard: (card,cardDisplay) => {
-
-        // remove the card completely from the list
+    removeCard: (card, cardDisplay) => {
 
         const removeCardBtn = document.createElement('button')
         removeCardBtn.classList.add('removeCardButton')
         removeCardBtn.innerHTML = 'x'
         card.appendChild(removeCardBtn)
 
-        removeCardBtn.addEventListener('click', () => {
+        removeCardBtn.addEventListener('click', (event) => {
+            event.stopPropagation()
             card.remove()
-            card.cardDisplay.remove()
+            cardDisplay.remove()
         })
     },
 
