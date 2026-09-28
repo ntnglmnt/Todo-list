@@ -1,82 +1,48 @@
 // Handles DOM generation for the projects
-const controller = {
 
-    createCard: () => {
 
-        function createNewProject(projectName) {
-            projectName = prompt('Enter project name')
-            return projectName
-        }
+        // removeCardBtn.addEventListener('click', (event) => {
+        //     event.stopPropagation()
+        //     card.remove()
+        //     cardDisplay.remove()
+        // })
 
-        const addProjectContainer = document.querySelector('.addProjectContainer')
-        addProjectContainer.innerHTML = 'New project'
+    // editCardName: (card, cardName) => {
 
-        const addNewProjectBtn = document.createElement('button')
-        addNewProjectBtn.classList.add('projectAdd')
-        addNewProjectBtn.innerHTML = '+'
-        addProjectContainer.appendChild(addNewProjectBtn)
-        addNewProjectBtn.addEventListener('click', function createCard() {
+    //     function createNewProject(projectName) {
+    //         projectName = prompt('Enter project name')
+    //         return projectName
+    //     }
 
-            const sidebarContainer = document.querySelector('.sidebarProjectDisplayContainer')
+function renderProjectCard(project) {
 
-            let card = document.createElement('button')
-            card.classList.add('projectCard')
-            sidebarContainer.appendChild(card)
-            card.addEventListener('click', () => {
-                taskCardContainer.replaceChildren(cardDisplay)
-            })
+    const cardDisplay = document.createElement('div')
+    cardDisplay.classList.add('cardDisplay')
 
-            const taskCardContainer = document.querySelector('.taskCardContainer')
+    const projectCard = document.createElement('button')
+    projectCard.classList.add('projectCard')
+    
+    const removeCardBtn = document.createElement('button')
+    removeCardBtn.classList.add('removeCardButton')
+    removeCardBtn.innerHTML = 'x'
+    projectCard.appendChild(removeCardBtn)
 
-            const cardDisplay = document.createElement('div')
-            cardDisplay.classList.add('cardDisplay')
-            taskCardContainer.replaceChildren(cardDisplay)
+    const editNameBtn = document.createElement('button')
+    editNameBtn.classList.add('editNameBtn')
+    editNameBtn.innerHTML = 'Edit'
+    projectCard.appendChild(editNameBtn)
 
-            const cardName = document.createElement('div')
-            cardName.classList.add('cardName')
-            cardName.innerHTML = createNewProject()
-            card.appendChild(cardName)
+    const projectNameContainer = document.createElement('div')
+    projectNameContainer.classList.add('projectNameContainer')
+    projectNameContainer.innerHTML = project.name
+    projectCard.appendChild(projectNameContainer)
 
-            controller.editCardName(card, cardName)
-            controller.removeCard(card, cardDisplay)
-        })
-    },
-
-    removeCard: (card, cardDisplay) => {
-
-        const removeCardBtn = document.createElement('button')
-        removeCardBtn.classList.add('removeCardButton')
-        removeCardBtn.innerHTML = 'x'
-        card.appendChild(removeCardBtn)
-
-        removeCardBtn.addEventListener('click', (event) => {
-            event.stopPropagation()
-            card.remove()
-            cardDisplay.remove()
-        })
-    },
-
-    editCardName: (card, cardName) => {
-
-        function createNewProject(projectName) {
-            projectName = prompt('Enter project name')
-            return projectName
-        }
-
-        // change the name of the card
-        const editNameBtn = document.createElement('button')
-        editNameBtn.classList.add('editNameBtn')
-        editNameBtn.innerHTML = 'Edit'
-        card.appendChild(editNameBtn)
-
-        editNameBtn.addEventListener('click', () => {
-            cardName.innerHTML = createNewProject()
-        })
-
-    }
-
+    project.card = projectCard
+    project.display = cardDisplay
+    project.removeCardBtn = removeCardBtn
+    project.editNameBtn = editNameBtn
 }
 
-controller.createCard()
+
 
 

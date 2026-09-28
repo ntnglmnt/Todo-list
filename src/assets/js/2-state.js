@@ -1,1 +1,8 @@
-// A universal container for all files to read through or write in
+// Global container for all files to read through or write in
+
+const appState = {
+
+    projects: [],
+    activeProjects: null,
+
+}
