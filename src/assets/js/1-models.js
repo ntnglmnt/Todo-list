@@ -11,10 +11,10 @@ function createProject(name) {
 
 function createTask(title, date, details, priority) {
     return { 
-        title: title, 
-        date: date, 
-        details: details, 
-        priority: priority,
+        title: prompt('select title'), 
+        date: prompt('select date'), 
+        details: prompt('add details'), 
+        priority: prompt('select priority'),
         element: null,
     }
 }
