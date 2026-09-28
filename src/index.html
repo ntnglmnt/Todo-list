@@ -6,32 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="add-task-module.js" defer></script>
-    <script src="add-project-module.js" defer></script>
+    <link rel="stylesheet" href="./css/project.css">
+    <link rel="stylesheet" href="./css/task.css">
+    <script src="./js/1-models.js" type="module"></script>
+    <script src="./js/2-state.js" type="module"></script>
+    <script src="./js/3-render-project.js" type="module"></script>
+    <script src="./js/4-render-task.js" type="module"></script>
+    <script src="./js/5-project-controller.js" type="module"></script>
+    <script src="./js/6-task-controller.js" type="module"></script>
 </head>
 
-<body> 
-   <!-- Contains the application name -->
+<body>
+    <!-- Contains the application name -->
     <div class="appNameContainer">
         <header>ADHD ASSISTANT</header>
     </div>
-<!-- This is the main container for the SIDEBAR and DISPLAY -->
+    <!-- This is the main container for the SIDEBAR and DISPLAY -->
     <div class="appFrameContainer">
         <!-- Contains the sidebar with all the features -->
         <div class="sidebarContainer">
-<!-- Contains the function that allows to generate a new project -->
+            <!-- Contains the function that allows to generate a new project -->
 
-            <div class="addProjectContainer">adds project</div>
-<!-- Contains a list of all generated projects -->
+            <div class="addProjectContainer"> <button class="addProjectBtn">+</button></div>
+            <!-- Contains a list of all generated projects -->
             <div class="sidebarProjectDisplayContainer">
-                
+
             </div>
 
         </div>
-<!-- Contains the top panel and the list of tasks generated in form of cards -->
+        <!-- Contains the top panel and the list of tasks generated in form of cards -->
         <div class="taskDisplayContainer">
             <!--Contains the Project name, ADD TASK function -->
-            <div class="taskDisplayTopPanel"> TASK TITLE  +  BUTTON ADD TASK</div>
+            <div class="taskDisplayTopPanel"> TASK TITLE + BUTTON ADD TASK</div>
             <!-- Contains all generated tasks in form of cards, listed one bellow the other -->
             <div class="taskCardContainer"></div>
         </div>

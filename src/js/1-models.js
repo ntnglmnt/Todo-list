@@ -1,6 +1,6 @@
 // Contains the structure of a project and task exclusively as data
 
-function createProject(name) {
+export function createProject(name) {
     return {
         name: name,
         tasks: [],
@@ -9,7 +9,7 @@ function createProject(name) {
     }
 }
 
-function createTask(title, date, details, priority) {
+export function createTask(title, date, details, priority) {
     return { 
         title: title, 
         date: date, 

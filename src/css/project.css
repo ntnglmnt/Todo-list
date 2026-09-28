@@ -1,0 +1,12 @@
+.addProjectBtn {
+    width: 50px;
+    height: 50px;
+    font-weight: 900;
+    font-size: 40px;
+    border: 2px solid black;
+    border-radius: 40px;
+}
+
+.deleteProjectBtn {
+
+}

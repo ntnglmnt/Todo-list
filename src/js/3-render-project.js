@@ -1,6 +1,6 @@
 // Handles DOM generation for the projects
 
-function renderProjectCard(project) {
+export function renderProjectCard(project) {
 
     const cardDisplay = document.createElement('div')
     cardDisplay.classList.add('cardDisplay')
@@ -24,7 +24,7 @@ function renderProjectCard(project) {
     projectCard.appendChild(projectNameContainer)
 
     project.card = projectCard
-    project.display = cardDisplay
+    project.cardDisplay = cardDisplay
     project.deleteProjectBtn = deleteProjectBtn
     project.editNameBtn = editNameBtn
 }

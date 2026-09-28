@@ -1,5 +1,6 @@
 // Handles DOM generation for the tasks
-function renderTask(task) {
+
+export function renderTask(task) {
 
     const taskCard = document.createElement('div')
     taskCard.classList.add('taskCard')
@@ -21,10 +22,7 @@ function renderTask(task) {
     const taskCompletion = document.createElement('button')
     taskCompletion.classList.add('taskCompletion')
     cardTopPanel.appendChild(taskCompletion)
-    // taskCompletion.addEventListener('click', () => {
-    //     taskController.completeTask(taskCard)
-    // })
-
+   
     const cardMidPanel = document.createElement('div')
     cardMidPanel.classList.add('midPanel')
     taskCard.appendChild(cardMidPanel)
@@ -46,3 +44,7 @@ function renderTask(task) {
     task.element = taskCard
     task.completeBtn = taskCompletion
 }
+
+ // taskCompletion.addEventListener('click', () => {
+    //     taskController.completeTask(taskCard)
+    // })
