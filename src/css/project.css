@@ -38,12 +38,31 @@
 /* PROJECT CARD CSS */
 .projectCard {
     border: 2px solid black;
-    width: 20vw;
+    width: 360px;
     height: 144px;
     font-size: 36px;
     padding-left: 14px;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: white;
+}
+
+.projectNameContainer {
+    height: 100px;
+    width: 358px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 12px;
+}
+
+.projectCardButtonContainer{
+    padding-top: 4px;
+     display: flex;
+     justify-content: space-between;
+     width: 340px;
+     height: 34px;
 }
 
 .deleteProjectBtn {
