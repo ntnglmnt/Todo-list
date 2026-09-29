@@ -23,76 +23,18 @@ body {
 
 /* SIDEBAR CSS MANAGEMENT */
 
-.sidebarContainer {
-    background-color: white;
-    width: 28vw;
-    height: 100vh;
-}
 
-.addProjectContainer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 120px;
-    background-color: white;
-    border-bottom: 2px solid black;
-    font-weight: 600;
-    font-size: large;
-}
 
-.sidebarProjectDisplayContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding-top: 12px;
-}
 
-.projectAdd {
-    width: 48px;
-    height: 48px;
-    font-size: large;
-    border-radius: 38px;
-    border: 1px solid black;
-    position: relative;
-    right: 260px;
-}
+
+
+
 
 /* PROJECT CARD CSS */
-.projectCard {
-    border: 2px solid black;
-    width: 20vw;
-    height: 144px;
-    font-size: 36px;
-    padding-left: 14px;
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-}
-.removeCardButton {
-    display: flex;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    background-color: white;
-    border-radius: 100px;
-    border: 1px solid white;
-    font-size: large;
-    font-weight: 1000;
-    box-shadow: none;
-}
 
-.editNameBtn {
-    width: 48px;
-    height: 26px;
-    position: relative;
-    top: 110px;
-    right: 190px;
-    background-color: white;
-    border: 2px solid rgb(0, 0, 0);
-    font-size: large;
-    font-weight: 600;
-}
+
+
+
 
 /* DISPLAY CSS MANAGEMENT */
 .taskDisplayContainer {

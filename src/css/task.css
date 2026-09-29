@@ -1,0 +1,101 @@
+.taskDisplayTopPanel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    border-bottom: 1px solid black;
+    font-size: 38px;
+}
+
+.taskAdd {
+    width: 128px;
+    height: 34px;
+    font-size: large;
+    border-radius: 18px;
+}
+
+.taskCardContainer {
+    background-color: white;
+}
+
+.cardDisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 42px;
+    gap: 20px;
+}
+
+.topPanel {
+    display: flex;
+    height: 54px;
+    width: 890px;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.taskCardName {
+    width: 288px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 900;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+.taskCardPrio{
+    width: 144px;
+    height: 44px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid black;
+    border-radius: 12px;
+}
+
+.taskCompletion {
+    width: 44px;
+    height: 44px;
+    border-radius: 100px;
+    background-color: rgb(253, 253, 253);
+}
+
+.midPanel {
+    display: flex;
+    padding: 12px;
+    height: 228px;
+    width: 820px;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+
+.taskCardDetails {
+    padding: 32px;
+    display: flex;
+    font-size: 28px;
+}
+
+.taskCard{
+    display: flex;
+    flex-direction: column;
+    width: 928px;
+    height: 328px;
+    border: 4px solid black;
+    border-radius: 42px;
+    justify-content: center;
+    align-items: center;
+}
+
+.taskCardDate {
+    display: flex;
+    align-items: center;
+    width: 88px;
+    height: 28px;
+    font-size: 24px;
+    font-weight: 900;
+}

@@ -7,21 +7,22 @@ export function renderProjectCard(project) {
 
     const projectCard = document.createElement('button')
     projectCard.classList.add('projectCard')
-    
-    const deleteProjectBtn = document.createElement('button')
-    deleteProjectBtn.classList.add('removeCardButton')
-    deleteProjectBtn.innerHTML = 'x'
-    projectCard.appendChild(deleteProjectBtn)
-
-    const editNameBtn = document.createElement('button')
-    editNameBtn.classList.add('editNameBtn')
-    editNameBtn.innerHTML = 'Edit'
-    projectCard.appendChild(editNameBtn)
+    cardDisplay.appendChild(projectCard)
 
     const projectNameContainer = document.createElement('div')
     projectNameContainer.classList.add('projectNameContainer')
     projectNameContainer.innerHTML = project.name
     projectCard.appendChild(projectNameContainer)
+    
+    const editNameBtn = document.createElement('button')
+    editNameBtn.classList.add('editNameBtn')
+    editNameBtn.innerHTML = 'Edit'
+    projectCard.appendChild(editNameBtn)
+
+    const deleteProjectBtn = document.createElement('button')
+    deleteProjectBtn.classList.add('deleteProjectBtn')
+    deleteProjectBtn.innerHTML = 'x'
+    projectCard.appendChild(deleteProjectBtn)
 
     project.card = projectCard
     project.cardDisplay = cardDisplay
