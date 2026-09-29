@@ -4,6 +4,19 @@ import { createTask } from './1-models.js'
 import { appState } from './2-state.js'
 import { renderTask } from './4-render-task.js'
 
+export function initTaskControls() {
+    document.querySelector('.addTaskBtn').addEventListener('click', () => {
+        const name = prompt('Enter task name')
+        if (!name) return
+        createNewTask(name)
+    })
+}
+
+export function distributeTaskEventListeners () {
+    
+}
+
+
 // function createNewTask () {
 
 // const title = prompt('Enter task title')

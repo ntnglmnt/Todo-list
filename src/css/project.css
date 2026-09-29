@@ -13,6 +13,7 @@
     border-bottom: 2px solid black;
     font-weight: 600;
     font-size: large;
+    padding-left: 60px;
 }
 
 .sidebarProjectDisplayContainer{
@@ -23,16 +24,15 @@
     padding-top: 12px;
 }
 
-.addProjectTextContainer {
-    font-size: 22px;
-}
-
 .addProjectBtn {
-    width: 89px;
-    height: 89px;
-    font-size: 78px;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(255, 255, 255);
+
+     display: flex;
+    width: 264px;
+    height: 64px;
+    font-size: large;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 34px;
+    align-items: center;
 }
 
 /* PROJECT CARD CSS */
@@ -49,12 +49,14 @@
 }
 
 .projectNameContainer {
-    height: 100px;
-    width: 358px;
+    height: 89px;
+    width: 304px;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     padding-left: 12px;
+    padding-bottom: 18px;
+
 }
 
 .projectCardButtonContainer{
