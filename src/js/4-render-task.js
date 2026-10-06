@@ -4,6 +4,7 @@ export function renderTask(task) {
 
     const taskCard = document.createElement('div')
     taskCard.classList.add('taskCard')
+    taskCard.style.backgroundColor = priorityColor(task.priority)
 
     const cardTopPanel = document.createElement('div')
     cardTopPanel.classList.add('topPanel')
@@ -22,7 +23,7 @@ export function renderTask(task) {
     const taskCompletion = document.createElement('button')
     taskCompletion.classList.add('taskCompletion')
     cardTopPanel.appendChild(taskCompletion)
-   
+
     const cardMidPanel = document.createElement('div')
     cardMidPanel.classList.add('midPanel')
     taskCard.appendChild(cardMidPanel)
@@ -45,3 +46,16 @@ export function renderTask(task) {
     task.completeBtn = taskCompletion
 }
 
+function priorityColor(priority) {
+    const p = priority?.toLowerCase()
+
+    if (p === 'high') {
+        return '#e35050'
+    } else if (p === 'med') {
+        return '#e3c550'
+    } else if (p === 'low') {
+        return '#7fbf7f'
+    } else {
+        return '#cccccc'
+    }
+}

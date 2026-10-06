@@ -30,3 +30,7 @@ finalize the task card design as per original concept in the blueprint file
 
 28/09/2026 
 due to the issue encountered with the delete button for project plus all tasks a re writing of the whole project begins today
+
+6/10/2026
+completed task-controller module
+added a feature which changes taskCard color based on priority
