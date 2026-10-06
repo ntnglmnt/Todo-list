@@ -6,23 +6,34 @@ import { renderTask } from './4-render-task.js'
 
 export function initTaskControls() {
     document.querySelector('.addTaskBtn').addEventListener('click', () => {
-        const name = prompt('Enter task name')
-        if (!name) return
-        createNewTask(name)
+
+        createNewTask()
+        
     })
 }
 
-export function distributeTaskEventListeners () {
-    
+initTaskControls();
+
+export function distributeTaskEventListeners(task) {
+    task.completeBtn.addEventListener('click', () => {
+        task.element.remove()
+        appState.activeProject.tasks = appState.activeProject.tasks.filter(t => t !== task)
+    })
 }
 
 
-// function createNewTask () {
 
-// const title = prompt('Enter task title')
-// const date = prompt('Enter task date')
-// const details = prompt('Enter task details')
-// const priority = prompt('Enter priority')
-// const task = createTask(title, date, details, priority)
+function createNewTask() {
 
-// }
+    const title = prompt('Enter task title')
+    if (!title) return
+    const date = prompt('Enter task date')
+    const details = prompt('Enter task details')
+    const priority = prompt('Enter priority')
+
+    const task = createTask(title, date, details, priority)
+    renderTask(task)
+    distributeTaskEventListeners(task)
+    appState.activeProject.tasks.push(task)
+    appState.activeProject.cardDisplay.appendChild(task.element)
+}

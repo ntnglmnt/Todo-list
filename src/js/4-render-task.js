@@ -45,6 +45,3 @@ export function renderTask(task) {
     task.completeBtn = taskCompletion
 }
 
- // taskCompletion.addEventListener('click', () => {
-    //     taskController.completeTask(taskCard)
-    // })
