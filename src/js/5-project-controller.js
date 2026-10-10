@@ -42,6 +42,7 @@ export function distributeEventlisteners(project) {
 }
 
 export function createNewProject(name) {
+    
     const project = createProject(name)
     renderProjectCard(project)
     distributeEventlisteners(project)

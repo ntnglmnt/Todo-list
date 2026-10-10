@@ -1,11 +1,42 @@
-.taskDisplayTopPanel {
-    display: flex;
-    height: 64px;
-    justify-content: space-around;
-    gap: 42px;
-    border-bottom: 1px solid black;
-    font-size: 38px;
+.taskCard{
+   height: 20%;
+    overflow: hidden;
 }
+
+summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px 16px;
+    list-style: none; 
+    cursor: pointer;       
+}
+summary::-webkit-details-marker {
+    display: none;            
+}
+
+.details {
+    width: 100%;
+}
+
+.summary::after {
+    content: "▸";
+    transition: transform 0.15s ease;
+}
+
+.details[open] .summary::after {
+    transform: rotate(90deg);
+}
+
+.content {
+    padding: 0 16px 16px 16px;
+}
+
+.taskCardDetails {
+    margin: 0;
+    font-size: 28px;
+    color: #000000;
+}   
 
 .addTaskBtn {
     display: flex;
@@ -27,14 +58,6 @@
     background-color: white;
     padding: 42px;
     gap: 20px;
-}
-
-.topPanel {
-    display: flex;
-    height: 54px;
-    width: 890px;
-    justify-content: space-between;
-    padding: 12px;
 }
 
 .taskCardName {
@@ -65,32 +88,9 @@
     height: 44px;
     border-radius: 100px;
     background-color: rgb(253, 253, 253);
-}
-
-.midPanel {
-    display: flex;
-    padding: 12px;
-    height: 228px;
-    width: 820px;
-    border-radius: 12px;
-    border: 2px solid black;
-}
-
-.taskCardDetails {
-    padding: 32px;
-    display: flex;
-    font-size: 28px;
-}
-
-.taskCard{
-    display: flex;
-    flex-direction: column;
-    width: 928px;
-    height: 328px;
-    border: 4px solid black;
-    border-radius: 42px;
     justify-content: center;
     align-items: center;
+    display: flex;
 }
 
 .taskCardDate {

@@ -6,9 +6,7 @@ import { renderTask } from './4-render-task.js'
 
 export function initTaskControls() {
     document.querySelector('.addTaskBtn').addEventListener('click', () => {
-
         createNewTask()
-        
     })
 }
 
@@ -33,6 +31,7 @@ function createNewTask() {
 
     const task = createTask(title, date, details, priority)
     renderTask(task)
+
     distributeTaskEventListeners(task)
     appState.activeProject.tasks.push(task)
     appState.activeProject.cardDisplay.appendChild(task.element)

@@ -21,7 +21,6 @@ body {
     background-color: white;
 }
 
-/* DISPLAY CSS MANAGEMENT */
 .taskDisplayContainer {
     width: 100vw;
     border-left: 4px solid black ;
@@ -55,14 +54,6 @@ body {
     background-color: white;
     padding: 42px;
     gap: 20px;
-}
-
-.topPanel {
-    display: flex;
-    height: 54px;
-    width: 890px;
-    justify-content: space-between;
-    padding: 12px;
 }
 
 .taskCardName {
